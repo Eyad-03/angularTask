@@ -4,13 +4,13 @@ let storeDescription:string = ""
 
 let currency:string ="" 
 
-let countProduct:number = 
+let countProduct:number = 0;
 
-let isOpen:bool = true
+let isOpen:boolean = true;
 
 let productName:string[] = ["laptop","phone","nokia","samsung","iphone"]
 
-let productDifferent :(string | number | bool)[] = ["laptop",true,20]
+let productDifferent:(string | number | boolean)[] = ["laptop", true, 20];
 
 let message = ""
 

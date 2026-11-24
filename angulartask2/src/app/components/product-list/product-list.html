@@ -1,0 +1,99 @@
+<h2>Our Products</h2>
+
+<div class="products">
+
+    <div class="product-card">
+        <img [src]="laptopImage">
+
+        <h3>{{ laptopName }}</h3>
+
+        <p>{{ laptopDescription }}</p>
+
+        <h4>${{ laptopPrice }}</h4>
+
+        <p>{{ laptopAvailable ? 'Available' : 'Unavailable' }}</p>
+
+        <button
+            [disabled]="!laptopAvailable"
+            (click)="buyNow(laptopName)">
+            Buy Now
+        </button>
+    </div>
+
+
+    <div class="product-card">
+        <img [src]="smartphoneImage">
+
+        <h3>{{ smartphoneName }}</h3>
+
+        <p>{{ smartphoneDescription }}</p>
+
+        <h4>${{ smartphonePrice }}</h4>
+
+        <p>{{ smartphoneAvailable ? 'Available' : 'Unavailable' }}</p>
+
+        <button
+            [disabled]="!smartphoneAvailable"
+            (click)="buyNow(smartphoneName)">
+            Buy Now
+        </button>
+    </div>
+
+
+    <div class="product-card">
+        <img [src]="headphonesImage">
+
+        <h3>{{ headphonesName }}</h3>
+
+        <p>{{ headphonesDescription }}</p>
+
+        <h4>${{ headphonesPrice }}</h4>
+
+        <p>{{ headphonesAvailable ? 'Available' : 'Unavailable' }}</p>
+
+        <button
+            [disabled]="!headphonesAvailable"
+            (click)="buyNow(headphonesName)">
+            Buy Now
+        </button>
+    </div>
+
+
+    <div class="product-card">
+        <img [src]="watchImage">
+
+        <h3>{{ watchName }}</h3>
+
+        <p>{{ watchDescription }}</p>
+
+        <h4>${{ watchPrice }}</h4>
+
+        <p>{{ watchAvailable ? 'Available' : 'Unavailable' }}</p>
+
+        <button
+            [disabled]="!watchAvailable"
+            (click)="buyNow(watchName)">
+            Buy Now
+        </button>
+    </div>
+
+
+    <div class="product-card">
+        <img [src]="keyboardImage">
+
+        <h3>{{ keyboardName }}</h3>
+
+        <p>{{ keyboardDescription }}</p>
+
+        <h4>${{ keyboardPrice }}</h4>
+
+        <p>{{ keyboardAvailable ? 'Available' : 'Unavailable' }}</p>
+
+        <button
+            [disabled]="!keyboardAvailable"
+            (click)="buyNow(keyboardName)">
+            Buy Now
+        </button>
+    </div>
+
+</div>

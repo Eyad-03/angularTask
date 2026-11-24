@@ -1,0 +1,23 @@
+nav {
+    background-color: #334155;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ea580c;
+}
+
+h3 {
+    color: white;
+}

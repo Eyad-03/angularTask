@@ -1,0 +1,27 @@
+.details {
+    text-align: center;
+    background-color: #f1f5f9;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.details img {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.details h2 {
+    color: #f97316;
+}
+
+.details button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}

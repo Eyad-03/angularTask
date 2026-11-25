@@ -1,0 +1,22 @@
+<app-product-details
+
+    [productName]="productName()"
+
+    [description]="productDescription()"
+
+    [price]="productPrice()"
+
+    [isAvailable]="productAvailability()"
+
+    (addToCart)="receiveProduct($event)"
+
+
+/>
+
+  <app-shopping-cart
+    [cartData]="cartData()"
+  />
+
+<button (click)="changeProduct()">
+  Show Second Product
+</button>

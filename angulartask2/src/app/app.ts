@@ -8,4 +8,14 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('angulartask2');
+
+  productName = signal('Laptop');
+
+  productDescription = signal('Dell Laptop, Core i7, 16GB RAM');
+
+  productPrice = signal(850);
+
+  productAvailability = signal(true);
+
+
 }

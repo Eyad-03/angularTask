@@ -1,0 +1,20 @@
+
+<h2>SHOPPING CART</h2>
+
+@if (cartData) {
+
+  <p>Product: {{ cartData.productName }}</p>
+
+  <p>Unit Price: ${{ cartData.price }}</p>
+
+  <p>Quantity: {{ cartData.quantity }}</p>
+
+  <p>
+    Total Price: $
+    {{ cartData.price * cartData.quantity }}
+  </p>
+
+}
+@else {
+  <p>Your cart is empty</p>
+}

@@ -1,0 +1,19 @@
+<h2>ELECTROSHOP - PRODUCT DETAILS</h2>
+
+<h3>{{ productName }}</h3>
+
+<p>{{ description }}</p>
+
+<p>Price: ${{ price }}</p>
+
+<p>Status {{isAvailable?"Available":"Not Available"}}</p>
+
+<button (click)="decreaseQuantity()">-</button>
+
+<h4>quantity : {{quantity()}}</h4>
+
+<button (click)="increaseQuantity()">+</button>
+
+<button (click)="sendToCart()" [disabled]="!isAvailable">
+  Add to Cart
+</button>

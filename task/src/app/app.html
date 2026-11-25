@@ -1,0 +1,27 @@
+<h1>Student Management</h1>
+
+<hr>
+
+<h2>Students Count: {{ studentCount() }}</h2>
+
+<button (click)="increaseStudents()">Add Student</button>
+
+<button (click)="resetStudents()">Reset</button>
+
+<hr>
+
+<!-- Parent to Child using Input -->
+
+<app-student-card
+  [name]="studentName"
+  [age]="studentAge"
+  (studentEvent)="receiveMessage($event)">
+</app-student-card>
+
+<hr>
+
+<!-- Child to Parent using Output -->
+
+<h3>Message from Child:</h3>
+
+<p>{{ message }}</p>

@@ -7,3 +7,18 @@
 <app-product-details></app-product-details>
 
 <app-footer></app-footer>
+
+
+  <app-product-details-component'
+
+    [productName]="productName()"
+
+    [description]="productDescription()"
+
+    [price]="productPrice()"
+
+    [isAvailable]="productAvailability()"
+
+    (addToCart)="receiveProduct($event)"
+
+  />

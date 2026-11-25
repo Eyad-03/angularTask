@@ -8,23 +8,13 @@ import { Navbar } from './components/navbar/navbar';
 import { ProductList } from './components/product-list/product-list';
 import { ProductDetails } from './components/product-details/product-details';
 import { Footer } from './components/footer/footer';
+import { ProductDetailsComponent } from './components/product-details-component/product-details-component';
 
 @NgModule({
+  declarations: [App, Header, Navbar, ProductDetailsComponent],
 
-  declarations: [
-    App,
-    Header,
-    Navbar
-  ],
+  imports: [BrowserModule, ProductList, ProductDetails, Footer],
 
-  imports: [
-    BrowserModule,
-    ProductList,
-    ProductDetails,
-    Footer
-  ],
-
-  bootstrap: [App]
-
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
